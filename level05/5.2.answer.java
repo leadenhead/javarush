@@ -22,8 +22,8 @@ public class Cat
 
     public boolean fight(Cat anotherCat)
     {
-        int myCat = this.weight + this.strength - this.age;
-        int youCat = anotherCat.weight + anotherCat.strength + anotherCat.age;
+        int myCat = this.weight + this.strength - this.age * 2;
+        int youCat = anotherCat.weight + anotherCat.strength - anotherCat.age * 2;
 
         return myCat > youCat;
     }
