@@ -6,5 +6,8 @@
 public class Cat
 {
     //напишите тут ваш код
-
+    String name;
+    int age;
+    int weight;
+    int strenght;
 }
