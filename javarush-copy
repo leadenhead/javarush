@@ -27,6 +27,7 @@ if [[ -n "$1" ]]; then
 fi
 
 for file in $(echo */*/*/*/*); do
+	# TODO бонусные задания переписываются обычными.
 	 level=$(cat $file | head -n 1 | cut -d '.' -f 4)
 	lesson=$(cat $file | head -n 1 | tr -d [:alpha:] | cut -d '.' -f 5)
 	  task=$(cat $file | head -n 1 | tr -d [:alpha:] | cut -d '.' -f 6 | cut -d ';' -f 1)
