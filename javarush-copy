@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# path to JavaRushHomeWork dir:
+path=~/JavaRushHomeWork
+cd $path/src/com/javarush
+
+# координаты кнопки списка заданий javarush в intellij IDEA.
+# узнать позицию курсора: xdotool getmouselocation
+x='1822'
+y='62'
+
+# количество доступных заданий в списке заданий передать аргументом, или
+# если отсутствует - просто скопировать файлы, которые есть. 
+if [[ -n "$1" ]]; then
+	n=$1
+	echo "total tasks $n"
+
+	sleep 3
+	for task in $(seq 1 $n); do
+		echo "task $task"
+		Down="${Down} Down"
+		# использовать сочетание клавиш или координаты для кнопки:
+		# xdotool key ctrl+shift+h
+		xdotool mousemove ${x} ${y} click --repeat 2 1
+		xdotool sleep 3 key Tab Tab ${Down} sleep 0.5 key Return sleep 1 key ctrl+s
+	done
+fi
+
+for file in $(echo */*/*/*/*); do
+	 level=$(cat $file | head -n 1 | cut -d '.' -f 4)
+	lesson=$(cat $file | head -n 1 | tr -d [:alpha:] | cut -d '.' -f 5)
+	  task=$(cat $file | head -n 1 | tr -d [:alpha:] | cut -d '.' -f 6 | cut -d ';' -f 1)
+	mkdir -p save/$level
+	cp $file save/$level/${lesson}.${task}.java
+done
