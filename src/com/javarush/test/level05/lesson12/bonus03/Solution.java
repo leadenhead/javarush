@@ -30,13 +30,10 @@ public class Solution
     static int compare(int[] array) {
         int max = 0;
 
-        for (int i = 1; i <= array.length; i++) {
-            for (int j = i - 1; j < array.length; j++) {
-                if (array[i] < array[j])
-                    max = array[j];
-            }
-        }
+        for (int i = 0; i < array.length; i++)
+            if (array[max] < array[i])
+                    max = i;
 
-        return max;
+        return array[max];
     }
 }
