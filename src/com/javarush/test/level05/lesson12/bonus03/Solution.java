@@ -14,13 +14,12 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int count = Integer.parseInt(reader.readLine());
-        int more;
-        int d;
-        more = d = Integer.parseInt(reader.readLine());
+        int count = Integer.parseInt(reader.readLine()) - 1;
+        int more = Integer.parseInt(reader.readLine());
+        int d = 0;
 
         //напишите тут ваш код
-        for (; count > 1; count--)
+        for (; count > 0; count--)
         {
             d = Integer.parseInt(reader.readLine());
             more = d > more ? d : more;
