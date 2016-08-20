@@ -23,6 +23,9 @@ public class Cat
     public boolean fight(Cat anotherCat)
     {
         //напишите тут ваш код
+        int myCat = this.weight + this.strength - this.age * 2;
+        int youCat = anotherCat.weight + anotherCat.strength - anotherCat.age * 2;
 
+        return myCat > youCat;
     }
 }

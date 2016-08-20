@@ -10,9 +10,16 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        Mouse jerryMouse = new Mouse("Jerry", 12 , 5);
-
         //напишите тут ваш код
+        Mouse jerryMouse = new Mouse("Jerry", 12 , 5);
+        Mouse jorikMouse = new Mouse("Jorik", 15 , 7);
+        Mouse jmurikMouse = new Mouse("Jmurik", 0 , 0);
+        Cat tomCat = new Cat("Tom", 12 , 5);
+        Cat oggyCat = new Cat("Oggy", 12 , 5);
+        Cat catdogCat = new Cat("Catdog", 12 , 5);
+        Dog plutoDog = new Dog("pluto", 12 , 5);
+        Dog dog2Dog = new Dog("dog2", 12 , 5);
+        Dog dog3Dog = new Dog("dog3", 12 , 5);
     }
 
     public static class Mouse
@@ -30,5 +37,31 @@ public class Solution
     }
 
     //добавьте тут ваши классы
+    public static class Dog
+    {
+        String name;
+        int height;
+        int tail;
 
+        public Dog(String name, int height, int tail)
+        {
+            this.name = name;
+            this.height = height;
+            this.tail = tail;
+        }
+    }
+
+    public static class Cat
+    {
+        String name;
+        int height;
+        int tail;
+
+        public Cat(String name, int height, int tail)
+        {
+            this.name = name;
+            this.height = height;
+            this.tail = tail;
+        }
+    }
 }

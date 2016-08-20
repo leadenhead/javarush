@@ -10,5 +10,33 @@ package com.javarush.test.level05.lesson07.task04;
 public class Circle
 {
     //напишите тут ваш код
+    private int centerX = 0;
+    private int centerY = 0;
+    private int radius = 0;
+    private int width = 0;
+    private String color = null;
 
+    public void initialize(int centerX, int centerY, int radius)
+    {
+        this.centerX = centerX;
+        this.centerY = centerY;
+        this.radius = radius;
+    }
+
+    public void initialize(int centerX, int centerY, int radius, int width)
+    {
+        this.centerX = centerX;
+        this.centerY = centerY;
+        this.radius = radius;
+        this.width = width;
+    }
+
+    public void initialize(int centerX, int centerY, int radius, int width, String color)
+    {
+        this.centerX = centerX;
+        this.centerY = centerY;
+        this.radius = radius;
+        this.width = width;
+        this.color = color;
+    }
 }

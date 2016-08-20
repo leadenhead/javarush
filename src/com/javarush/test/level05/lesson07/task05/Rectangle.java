@@ -12,5 +12,38 @@ package com.javarush.test.level05.lesson07.task05;
 public class Rectangle
 {
     //напишите тут ваш код
+    private int top = 0;
+    private int left = 0;
+    private int width = 0;
+    private int height = 0;
 
+    public void initialize(int t, int l, int w, int h)
+    {
+        this.top = t;
+        this.left = l;
+        this.width = w;
+        this.height = h;
+    }
+
+    public void initialize(int t, int l)
+    {
+        this.top = t;
+        this.left = l;
+    }
+
+    public void initialize(int t, int l, int h)
+    {
+        this.top = t;
+        this.left = l;
+        this.width = h;
+        this.height = h;
+    }
+
+    public void initialize(Rectangle R)
+    {
+        this.top = R.top;
+        this.left = R.left;
+        this.width = R.width;
+        this.height = R.height;
+    }
 }

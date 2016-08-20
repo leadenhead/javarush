@@ -13,5 +13,39 @@ package com.javarush.test.level05.lesson07.task02;
 public class Cat
 {
     //напишите тут ваш код
+    private String name = null;
+    private int weight = 5;
+    private int age = 4;
+    private String color = null;
+    private String address = null;
 
+    public void initialize(String name)
+    {
+        this.name = name;
+    }
+
+    public void initialize(String name, int weight, int age)
+    {
+        this.name = name;
+        this.weight = weight;
+        this.age = age;
+    }
+
+    public void initialize(int age)
+    {
+        this.age = age;
+    }
+
+    public void initialize(int weight, String color)
+    {
+        this.weight = weight;
+        this.color = color;
+    }
+
+    public void initialize(int weight, String color, String address)
+    {
+        this.weight = weight;
+        this.color = color;
+        this.address = address;
+    }
 }

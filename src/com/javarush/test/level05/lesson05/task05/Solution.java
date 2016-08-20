@@ -10,6 +10,14 @@ package com.javarush.test.level05.lesson05.task05;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat cat1 = new Cat("riszik", 4, 5, 10);
+        Cat cat2 = new Cat("vasjok", 5, 7, 8);
+        Cat cat3 = new Cat("balbes", 7, 9, 13);
+
+        // fight
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat2.fight(cat3));
+        System.out.println(cat3.fight(cat1));
     }
 
     public static class Cat {

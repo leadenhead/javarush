@@ -9,5 +9,6 @@ public class Solution
     public static void main(String[] args)
     {
         //напишите тут ваш код
+        System.out.print("18 08 2016");
     }
 }
