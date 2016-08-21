@@ -7,11 +7,19 @@ package com.javarush.test.level06.lesson05.task02;
 public class Cat
 {
     //напишите тут ваш код
+    protected void finalize() throws Throwable
+    {
+        System.out.print("object Cat destroyed.");
+    }
 
 }
 
 class Dog
 {
     //напишите тут ваш код
+    protected void finalize() throws Throwable
+    {
+        System.out.print("object Dog destroyed.");
+    }
 
 }
