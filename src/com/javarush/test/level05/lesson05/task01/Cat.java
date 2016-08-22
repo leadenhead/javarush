@@ -7,5 +7,8 @@ package com.javarush.test.level05.lesson05.task01;
 public class Cat
 {
     //напишите тут ваш код
-
+    String name;
+    int age;
+    int weight;
+    int strenght;
 }

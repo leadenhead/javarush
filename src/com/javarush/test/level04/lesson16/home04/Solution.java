@@ -1,6 +1,7 @@
 package com.javarush.test.level04.lesson16.home04;
 
 import java.io.*;
+import java.util.Date;
 
 /* Меня зовут 'Вася'...
 Ввести с клавиатуры строку name.
@@ -18,5 +19,16 @@ public class Solution
     public static void main(String[] args)   throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String name = "";
+        int y, m, d;
+
+        name = reader.readLine();
+        d = Integer.parseInt(reader.readLine());
+        m = Integer.parseInt(reader.readLine());
+        y = Integer.parseInt(reader.readLine());
+
+        System.out.println("Меня зовут " + name + " \nЯ родился " + d + "." + m + "." + y);
     }
 }

@@ -11,5 +11,26 @@ public class Solution
     public static void main(String[] args)   throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int[] arr = new int[3];
+
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = Integer.parseInt(reader.readLine());
+
+        System.out.println(mid(arr));
+    }
+
+    static int mid (int[] array) {
+        int m;
+
+        if (array[0] < array[1] && array[0] > array[2])
+            m = array[0];
+        else if (array[1] < array[0] && array[1] > array[2])
+            m = array[1];
+        else
+            m = array[2];
+
+        return m;
     }
 }
