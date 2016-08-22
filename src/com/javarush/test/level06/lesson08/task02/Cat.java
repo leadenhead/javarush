@@ -16,12 +16,12 @@ public class Cat
     public static int getCatCount()
     {
         //напишите тут ваш код
-
+        return Cat.catCount;
     }
 
     public static void setCatCount(int catCount)
     {
         //напишите тут ваш код
-
+        Cat.catCount = catCount;
     }
 }

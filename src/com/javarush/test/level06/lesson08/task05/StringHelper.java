@@ -14,6 +14,10 @@ public class StringHelper
     {
         String result = "";
         //напишите тут ваш код
+        for (int i=5; i>0; i--)
+            result += s;
+//            result.concat(s);
+
         return result;
     }
 
@@ -21,6 +25,10 @@ public class StringHelper
     {
         String result = "";
         //напишите тут ваш код
+        for (; count>0; count--)
+            result += s;
+//            result.concat(s);
+
         return result;
     }
 }
