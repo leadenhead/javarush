@@ -7,5 +7,9 @@ package com.javarush.test.level06.lesson08.task01;
 public class Cat
 {
     //напишите тут ваш код
+    public static int catCount;
 
+    public Cat() {
+        catCount++;
+    }
 }
