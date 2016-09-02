@@ -14,6 +14,7 @@ public class StringHelper
     {
         String result = "";
         //напишите тут ваш код
+        result = s + s + s + s + s;
         return result;
     }
 
@@ -21,6 +22,10 @@ public class StringHelper
     {
         String result = "";
         //напишите тут ваш код
+        for (int i = 0; i < count; i++)
+        {
+            result += s;
+        }
         return result;
     }
 }
