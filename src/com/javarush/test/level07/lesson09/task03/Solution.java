@@ -16,6 +16,19 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<String>();
 
+        list.add("мама");
+        list.add("мыла");
+        list.add("раму");
+
+        list.add(1, "именно");
+        list.add(3, "именно");
+        list.add("именно");
+
+        for (int i = 0; i < 6; i++) {
+            System.out.println(list.get(i));
+        }
     }
 }

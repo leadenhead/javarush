@@ -19,10 +19,36 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<Integer> baselist = new ArrayList<Integer>();
+        ArrayList<Integer> multiplies3 = new ArrayList<Integer>();
+        ArrayList<Integer> multiplies2 = new ArrayList<Integer>();
+        ArrayList<Integer> last = new ArrayList<Integer>();
+
+        for (int i = 0; i < 20; i++) {
+            int temp = Integer.parseInt(reader.readLine());
+            baselist.add(temp);
+            if ((temp % 2 != 0) && (temp % 3 != 0)) last.add(temp);
+            else
+            {
+                if (temp % 3 == 0) multiplies3.add(temp);
+                if (temp % 2 == 0) multiplies2.add(temp);
+            }
+        }
+
+        printList(multiplies3);
+        //System.out.println();
+        printList(multiplies2);
+        //System.out.println();
+        printList(last);
     }
 
     public static void printList(List<Integer> list)
     {
         //напишите тут ваш код
+        for (Integer i:
+             list) {
+            System.out.println(i);
+        }
     }
 }

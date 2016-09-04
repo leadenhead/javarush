@@ -14,6 +14,16 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<String>();
 
+        for (int i = 0; i < 5; i++) {
+            String s = reader.readLine();
+            list.add(s);
+        }
+        list.remove(2);
+        for (int i = 0; i < 4; i++) {
+            System.out.println(list.get(3-i));
+        }
     }
 }
