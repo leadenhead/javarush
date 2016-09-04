@@ -16,6 +16,16 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<String>();
+        int maxSize = 0;
+        for (int i = 0; i < 5; i++) {
+            list.add(reader.readLine());
+            if (list.get(i).length() > maxSize) maxSize = list.get(i).length();
+        }
+        for (String s:
+             list) {
+            if (s.length() == maxSize) System.out.println(s);
+        }
     }
 }

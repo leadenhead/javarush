@@ -13,6 +13,15 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
-
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("fdgsd");
+        list.add("gsdfg");
+        list.add("hfgdh");
+        list.add("frtet");
+        list.add("zxcvv");
+        System.out.println(list.size());
+        for (String s: list) {
+            System.out.println(s);
+        }
     }
 }
