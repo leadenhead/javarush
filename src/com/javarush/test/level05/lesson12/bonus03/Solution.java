@@ -14,13 +14,15 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = ;
+        int maximum = Integer.MIN_VALUE;
+        int n = Integer.parseInt(reader.readLine());
 
         //напишите тут ваш код
-
-
-
-
+        for (int i = 0; i < n; i++)
+        {
+            int buff = Integer.parseInt(reader.readLine());
+            if (buff > maximum) maximum = buff;
+        }
         System.out.println(maximum);
     }
 }

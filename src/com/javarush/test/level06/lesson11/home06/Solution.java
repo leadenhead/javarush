@@ -8,12 +8,12 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        System.out.println(???);
+        KissMyShinyMetalAss kiss = new KissMyShinyMetalAss();
+        System.out.println(kiss);
     }
 
-    public static class ???
+    public static class KissMyShinyMetalAss
     {
 
     }
-
 }

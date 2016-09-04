@@ -15,6 +15,18 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] array = new int[10];
+        for (int i = 0; i < 10; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
+        }
+        for (int i = 0; i < 5; i++) {
+            int temp = array[i];
+            array[i] = array[9-i];
+            array[9-i] = temp;
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(array[i]);
+        }
     }
 }

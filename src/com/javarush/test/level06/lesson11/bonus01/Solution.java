@@ -4,6 +4,10 @@ package com.javarush.test.level06.lesson11.bonus01;
 Задача: Программа вводит два числа с клавиатуры и выводит их максимум в виде «Max is 25»
 */
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Solution
 {
     public static int max = 100;
@@ -14,9 +18,9 @@ public class Solution
         String max = "Max is ";
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
-        max = a > b ? a : b;
+        int max1 = a > b ? a : b;
 
-        System.out.println(max + max);
+        System.out.println(max + max1);
     }
 
 }

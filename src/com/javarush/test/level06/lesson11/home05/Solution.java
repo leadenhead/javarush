@@ -15,4 +15,16 @@ public class Solution
     }
 
     //Добавьте тут класс Idea
+    public static class Idea
+    {
+        public String getDescription()
+        {
+            return "New Idea";
+        }
+    }
+    public static void printIdea(Idea idea)
+    {
+        System.out.println(idea.getDescription());
+    }
+
 }

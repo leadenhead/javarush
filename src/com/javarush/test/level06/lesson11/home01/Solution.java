@@ -11,15 +11,23 @@ public class Solution
     public static void main(String[] args)
     {
         //Cоздай тут 10 объектов Cat
-
+        for (int i = 0; i < 10; i++)
+        {
+            Cat cat = new Cat();
+        }
         //Выведи тут на экран catCount
+        System.out.println(Cat.catCount);
     }
 
     public static class Cat
     {
         //Cоздай тут статическую переменную
-
+        public static int catCount;
         //Создай тут конструктор
+
+        public Cat() {
+            catCount++;
+        }
     }
 
 }
