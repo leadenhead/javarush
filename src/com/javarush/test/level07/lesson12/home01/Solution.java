@@ -19,5 +19,12 @@ public class Solution
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //напишите тут ваш код
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            list.add(Integer.parseInt(reader.readLine()));
+        }
+        for (int i = 9; i >= 0; i--) {
+            System.out.println(list.get(i));
+        }
     }
 }

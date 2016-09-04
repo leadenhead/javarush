@@ -20,5 +20,16 @@ public class Solution
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //напишите тут ваш код
+        ArrayList<String> list = new ArrayList<String>();
+        String s;
+        while (true){
+            s = reader.readLine();
+            if ("end".equals(s)) break;
+            list.add(s);
+        }
+        for (String str:
+             list) {
+            System.out.println(str);
+        }
     }
 }

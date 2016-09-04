@@ -21,7 +21,14 @@ public class Solution
         int  minimum;
 
         //напишите тут ваш код
-
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        maximum = Integer.MIN_VALUE;
+        minimum = Integer.MAX_VALUE;
+        for (int i = 0; i < 20; i++) {
+            list.add(Integer.parseInt(reader.readLine()));
+            if (list.get(i) > maximum) maximum = list.get(i);
+            if (list.get(i) < minimum) minimum = list.get(i);
+        }
 
         System.out.println(maximum);
         System.out.println(minimum);

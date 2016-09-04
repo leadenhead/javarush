@@ -6,7 +6,7 @@ package com.javarush.test.level07.lesson12.home07;
 
 public class Solution
 {
-    public final int A = 5;
+    public static final int A = 5;
     public final static int B = 2;
     public final static int C = A*B;
 
@@ -14,7 +14,7 @@ public class Solution
     {
     }
 
-    public static int getValue()
+    public int getValue()
     {
         return C;
     }
