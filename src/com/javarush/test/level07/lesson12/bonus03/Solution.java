@@ -29,5 +29,14 @@ public class Solution
     public static void sort(int[] array)
     {
         //напишите тут ваш код
+        for (int i = 0; i < 19; i++) {
+            for (int j = i + 1; j < 20; j++) {
+                if (array[i] < array[j]){
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
     }
 }

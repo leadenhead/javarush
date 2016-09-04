@@ -22,10 +22,13 @@ public class Solution
         while (true)
         {
             String name = reader.readLine();
+            String str1 = reader.readLine();
+            String str2 = reader.readLine();
+            String str3 = reader.readLine();
 
-            if (name.isEmpty()) break;
+            if (name.isEmpty() || str1.isEmpty() || str2.isEmpty() || str3.isEmpty()) break;
 
-            Cat cat = new Cat(name);
+            Cat cat = new Cat(name, Integer.parseInt(str1), Integer.parseInt(str2), Integer.parseInt(str3));
             CATS.add(cat);
         }
 
