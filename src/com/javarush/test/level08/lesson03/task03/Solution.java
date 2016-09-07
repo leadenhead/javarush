@@ -1,5 +1,8 @@
 package com.javarush.test.level08.lesson03.task03;
 
+import com.javarush.test.level06.lesson08.task05.StringHelper;
+import com.javarush.test.level06.lesson11.home02.Cat;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,6 +31,13 @@ public class Solution
     public static HashMap<String, Cat> addCatsToMap(String[] cats)
     {
         //напишите тут ваш код
+        HashMap<String, Cat> m = new HashMap<String, Cat>();
+        for (String s:
+             cats) {
+            Cat cat = new Cat(s);
+            m.put(s, cat);
+        }
+        return m;
 
     }
 
