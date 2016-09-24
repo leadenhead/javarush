@@ -21,11 +21,12 @@ public class Solution
     public static long  getTimeMsOfInsert(List list)
     {
         //напишите тут ваш код
-
+        Date start = new Date();
         insert10000(list);
+        Date finish = new Date();
 
         //напишите тут ваш код
-
+        return finish.getTime()-start.getTime();
     }
 
     public static void insert10000(List list)

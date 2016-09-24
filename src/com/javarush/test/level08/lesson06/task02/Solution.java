@@ -30,24 +30,33 @@ public class Solution
     public static void insert10000(List list)
     {
         //напишите тут ваш код
+        for (int i = 0; i < 10000; i++) {
+            list.add(321);
+        }
 
     }
 
     public static void get10000(List list)
     {
         //напишите тут ваш код
-
+        for (int i = 0; i < 10000; i++) {
+            list.get(i);
+        }
     }
 
     public static void set10000(List list)
     {
         //напишите тут ваш код
-
+        for (int i = 0; i < 10000; i++) {
+            list.set(i,321);
+        }
     }
 
     public static void remove10000(List list)
     {
         //напишите тут ваш код
-
+        for (int i = 9999; i >= 0; i--) {
+            list.remove(i);
+        }
     }
 }

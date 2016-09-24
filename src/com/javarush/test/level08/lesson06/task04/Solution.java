@@ -30,11 +30,11 @@ public class Solution
     public static long  getTimeMsOfGet(List list)
     {
         //напишите тут ваш код
-
+        Date start = new Date();
         get10000(list);
-
+        Date finish = new Date();
         //напишите тут ваш код
-
+        return finish.getTime()-start.getTime();
     }
 
     public static void get10000(List list)

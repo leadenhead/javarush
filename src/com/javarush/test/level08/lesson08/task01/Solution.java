@@ -12,6 +12,10 @@ public class Solution
     public static HashSet<String> createSet()
     {
         //напишите тут ваш код
-
+        Set<String> set = new HashSet<String>();
+        for (int i = 0; i < 20; i++) {
+            set.add("Лосось №" + i);
+        }
+        return (HashSet<String>) set;
     }
 }
