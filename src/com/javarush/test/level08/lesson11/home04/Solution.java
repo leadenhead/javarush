@@ -22,11 +22,22 @@ public class Solution
 
     public static int getMinimum(List<Integer> array) {
         // Найти минимум
-        return 0;
+        Integer min = Integer.MAX_VALUE;
+        for (Integer i:
+             array) {
+            if (i < min) min = i;
+        }
+        return min;
     }
 
     public static List<Integer> getIntegerList() throws IOException {
         //Тут создать и заполнить список
-        return null;
+        List<Integer> list = new ArrayList<Integer>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(reader.readLine());
+        for (int i = 0; i < N; i++) {
+            list.add(Integer.parseInt(reader.readLine()));
+        }
+        return list;
     }
 }

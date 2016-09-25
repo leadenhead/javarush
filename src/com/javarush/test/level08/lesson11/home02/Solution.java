@@ -1,6 +1,9 @@
 package com.javarush.test.level08.lesson11.home02;
 
+import com.javarush.test.level06.lesson11.home02.Cat;
+
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /* Множество всех животных
@@ -31,6 +34,10 @@ public class Solution
         HashSet<Cat> result = new HashSet<Cat>();
 
         //напишите тут ваш код
+        result.add(new Cat("Roman"));
+        result.add(new Cat("Sergey"));
+        result.add(new Cat("Aleksey"));
+        result.add(new Cat("Dmitry"));
 
         return result;
     }
@@ -38,24 +45,75 @@ public class Solution
     public static Set<Dog> createDogs()
     {
         //напишите тут ваш код
-        return null;
+        HashSet<Dog> result = new HashSet<Dog>();
+
+        result.add(new Dog("Vasiliy"));
+        result.add(new Dog("Anton"));
+        result.add(new Dog("Evgeniy"));
+
+        return result;
     }
 
     public static Set<Object> join(Set<Cat> cats, Set<Dog> dogs)
     {
         //напишите тут ваш код
-        return null;
+        HashSet<Object> result = new HashSet<Object>();
+
+        for (Cat cat:
+             cats) {
+            result.add(cat);
+        }
+
+        for (Dog dog:
+             dogs) {
+            result.add(dog);
+        }
+
+        return result;
     }
 
     public static void removeCats(Set<Object> pets, Set<Cat> cats)
     {
         //напишите тут ваш код
+        Iterator<Object> iterator = pets.iterator();
+        while (iterator.hasNext()){
+            Object obj = iterator.next();
+            Iterator<Cat> itCat = cats.iterator();
+            while(itCat.hasNext()){
+                Cat cat = itCat.next();
+                if (obj.equals(cat)) {
+                    iterator.remove();
+                    break;
+                }
+            }
+        }
     }
 
     public static void printPets(Set<Object> pets)
     {
         //напишите тут ваш код
+        for (Object obj:
+             pets) {
+            System.out.println(obj);
+        }
     }
 
     //напишите тут ваш код
+    public static class Cat
+    {
+        private String name;
+
+        public Cat(String name) {
+            this.name = name;
+        }
+    }
+
+    public static class Dog
+    {
+        private String name;
+
+        public Dog(String name) {
+            this.name = name;
+        }
+    }
 }
